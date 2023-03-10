@@ -23,7 +23,7 @@ export function SiteHeader() {
               <Icons.bell className="h-5 w-5" />
               <span className="sr-only">Notifications</span>
             </div>
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </nav>
         </div>
       </div>
