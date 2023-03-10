@@ -2,9 +2,6 @@
 
 Contains the ingestion API endpoint and upload functionality for the Brikmate dashboard.
 
-
-https://book-gpt.vercel.app
-
 ## Development
 
 ```
@@ -19,5 +16,5 @@ npm run dev
 
 ## Credit:
 
-* [ui](https://github.com/shadcn/ui): Beautifully designed components built with Radix UI and Tailwind CSS.
-* [langchainjs](https://hwchase17.github.io/langchainjs/docs/overview/)
+- [ui](https://github.com/shadcn/ui): Beautifully designed components built with Radix UI and Tailwind CSS.
+- [langchainjs](https://hwchase17.github.io/langchainjs/docs/overview/)
