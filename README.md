@@ -2,6 +2,8 @@
 
 Contains the ingestion API endpoint and upload functionality for the Brikmate dashboard.
 
+Warning: Ingestion will not work once the OpenAI API usage has hit its limit.
+
 ## Development
 
 ```
