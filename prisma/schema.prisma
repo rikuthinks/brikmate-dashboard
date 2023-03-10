@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Lease {
+  id          String   @id @default(cuid())
+  propertyAddress       String
+  propertyDescription       String
+  tenantName String
+  tenantContactInfo       String
+  landlordName      String
+  landlordContactInfo        String
+  leaseStartDate       String
+  leaseEndDate       String
+  renewalOptions       String
+  rentAmount       String
+  rentPaymentSchedule      String
+  rentEscalationClauses       String
+  securityDepositAmount       String
+  securityDespositRequirements String
+  permittedUses       String
+  prohibitedUses       String
+  restrictionsAlterations       String
+  maintainingPremises       String
+  tenantInsuranceRequirements       String
+  landlordInsuranceRequirements       String
+  insuranceAmounts       String
+  indemnificationProvisions       String
+  tenantDefault       String
+  landlordDefault       String
+  terminationProvisions       String
+  assignmentSublettingRestrictions       String
+  landlordApprovalAssignmentSubletting       String
+  maintenanceResponsibilities       String
+  camCharges       String
+  utilitiesRequirements       String
+  disputeResolution       String
+  governingLawJurisdiction       String
+  noticesRequirements       String
+  forceMajeureProvisions       String
+  confidentialityProvisions       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
